@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PELUQUERIA UOMOS - Gestión de Turnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PELUQUERIA UOMOS</h1>
+    </header>
+    <main>
+        <div id="calendar">
+            <!-- Calendario interactivo y horarios -->
+        </div>
+        <div id="turnos">
+            <!-- Lista de turnos reservados -->
+            <h2>Turnos Reservados</h2>
+            <ul id="lista-turnos">
+                <!-- Los turnos se cargarán dinámicamente aquí -->
+            </ul>
+        </div>
+    </main>
 
+    <!-- Modal para confirmar reserva de turno -->
+    <div id="modal-confirmacion" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Confirmar Reserva</h2>
+            <p id="modal-info"></p>
+            <button id="confirmar-btn">Confirmar</button>
+            <button id="cancelar-btn">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
